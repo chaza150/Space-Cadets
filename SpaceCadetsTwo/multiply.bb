@@ -1,13 +1,6 @@
 clear X;
-incr X;
-incr X;
 clear Y;
-incr Y;
-incr Y;
-incr Y;
-incr Y;
-clear Z;
-while X not 0 do;
+function func;
 	clear W;
 	while Y not 0 do;
 		incr Z;
@@ -19,4 +12,12 @@ while X not 0 do;
 		decr W;
 	end;
 	decr X;
+functionEnd;
+input Y;
+copy X Y;
+clear Z;
+while X not 0 do;
+	// This is a comment
+	func;
 end;
+output Z;
