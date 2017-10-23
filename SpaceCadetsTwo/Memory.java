@@ -33,12 +33,12 @@ public class Memory {
 	public void setVarValue(String varName, int varValue) {
 		if(!this.containsVarName(varName)) {
 			memory.add(new Variable(varName));
-			System.out.println("First instance of \"" + varName + "\" created.");
+			//System.out.println("First instance of \"" + varName + "\" created.");
 			memory.get(this.fetchVarIndex(varName)).value = varValue;
-			System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
+			//System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
 		} else {
 			memory.get(this.fetchVarIndex(varName)).value = varValue;
-			System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
+			//System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
 		}
 	}
 	
@@ -47,10 +47,10 @@ public class Memory {
 	public void clear(String varName) {
 		if(!this.containsVarName(varName)) {
 			memory.add(new Variable(varName));
-			System.out.println("First instance of \"" + varName + "\" created.");
+			//System.out.println("First instance of \"" + varName + "\" created.");
 		} else {
 			memory.get(this.fetchVarIndex(varName)).value = 0;
-			System.out.println("Variable \"" + varName + "\" has been cleared.");
+			//System.out.println("Variable \"" + varName + "\" has been cleared.");
 		}
 	}
 	
@@ -58,12 +58,12 @@ public class Memory {
 	public void incr(String varName) {
 		if(!this.containsVarName(varName)) {
 			memory.add(new Variable(varName));
-			System.out.println("First instance of \"" + varName + "\" created.");
+			//System.out.println("First instance of \"" + varName + "\" created.");
 			memory.get(this.fetchVarIndex(varName)).value++;
-			System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
+			//System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
 		} else {
 			memory.get(this.fetchVarIndex(varName)).value++;
-			System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
+			//System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
 		}
 	}
 
@@ -71,12 +71,12 @@ public class Memory {
 	public void decr(String varName) {
 		if(!this.containsVarName(varName)) {
 			memory.add(new Variable(varName));
-			System.out.println("First instance of \"" + varName + "\" created.");
+			//System.out.println("First instance of \"" + varName + "\" created.");
 			memory.get(this.fetchVarIndex(varName)).value--;
-			System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
+			//System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
 		} else {
 			memory.get(this.fetchVarIndex(varName)).value--;
-			System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
+			//System.out.println("Variable \"" + varName + "\" = " + memory.get(this.fetchVarIndex(varName)).value);
 		}
 	}
 	
