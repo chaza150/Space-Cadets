@@ -1,0 +1,7 @@
+An image circle detector. This software will detect the structure that is most likely to be a whole/partial circle in a standard image file.
+
+Due to the large number of loops required for the algorithm to take place, some limitations have been introduced:
+  - The image is downscaled before the Hough transform takes place and MAX_TEST_SIZE = the maximum number of pixels in the scaled image.
+  - The image's Sobel (Edge) Operator threshold can be adjusted to limit the edges tested to only stronger edges.
+  
+The latter of these two limitations makes the program difficult to use on very noisy images.
