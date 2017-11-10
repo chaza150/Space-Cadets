@@ -1,19 +1,14 @@
 
 public class SobelCoordinate {
 
-	float theta;
 	int x;
 	int y;
 	
-	public SobelCoordinate(int x, int y, float theta) {
+	public SobelCoordinate(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.theta = theta;
 	}
 
-	public float getTheta() {
-		return theta;
-	}
 
 	public int getX() {
 		return x;

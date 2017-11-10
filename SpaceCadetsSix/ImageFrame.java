@@ -11,7 +11,7 @@ public class ImageFrame extends JFrame{
 	
 	
 	public static void main(String[] args) {
-		ImageFrame iframe = new ImageFrame("Medals.jpg");
+		ImageFrame iframe = new ImageFrame("Panda.jpg");
 		
 		iframe.setTitle("Circle Detection");
 		iframe.setSize(2100, 1080);
