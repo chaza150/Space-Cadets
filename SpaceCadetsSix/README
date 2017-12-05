@@ -1,4 +1,4 @@
-An image circle detector. This software will detect the structure that is most likely to be a whole/partial circle in a standard image file.
+An image circle detector. This software will detect all the structures that are likely to be a whole/partial circle in a standard image.
 
 Due to the large number of loops required for the algorithm to take place, some limitations have been introduced:
   - The image is downscaled before the Hough transform takes place and MAX_TEST_SIZE = the maximum number of pixels in the scaled image.
